@@ -1,5 +1,5 @@
 export default {
-  HOME: () => "/",
-  ABOUT: () => "/about",
-  POSTS: () => "/posts",
+  HOME: "/",
+  ABOUT: "/about",
+  POSTS: "/posts",
 };

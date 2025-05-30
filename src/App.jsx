@@ -6,19 +6,22 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Posts from "./pages/Posts";
 import pages from "./data/pages";
+import DefaultLayout from './layouts/DefaultLayout';
 
-export default function App() {
-
+function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/posts" elemeent={<Posts />} />
+          <Route element={<DefaultLayout />}>
+            <Route path={pages.HOME} element={<Home />} />
+            <Route path={pages.ABOUT} element={<About />} />
+            <Route path={pages.POSTS} element={<Posts />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
   )
 }
 
+export default App; 
