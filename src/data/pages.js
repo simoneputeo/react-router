@@ -3,3 +3,4 @@ export default {
   ABOUT: "/about",
   POSTS: "/posts",
 };
+.
